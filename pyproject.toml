@@ -26,3 +26,27 @@ dev = [
     "ruff>=0.17.3",
     "ty>=0.0.97",
 ]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+[tool.ruff.lint]
+select = [
+"E", "W",   # pycodestyle (errors, warnings)
+"F",  # Pyflakes (bugs)      
+"I", # isort (imports)       
+"N", # pep8-naming       
+"B",  # flake8-bugbear      
+"UP", # pyupgrade (modern syntax)     
+]
+
+fixable = ["ALL"]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+pythonVersion = "3.12"
+include = ["src"]
+exclude = [".venv", "__pycache__", "build", "dist"]
+reportMissingTypeStubs = true
+reportUnknownMemberType = "warning"
+reportUnknownParameterType = "warning"

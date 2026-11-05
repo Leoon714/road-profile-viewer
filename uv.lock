@@ -305,18 +305,6 @@ wheels = [
 ]
 
 [[package]]
-name = "pyride"
-version = "0.0.1.dev19"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "requests" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/68/fe/fb5ebe95023effed842abc138b217a239a435c40f44c5e9fe050bcb34717/PYRIDE-0.0.1.dev19.tar.gz", hash = "sha256:785fb70236f6f270adfec434a43ed9dc72977ab224d0fdebc6538a130235b4a4", size = 48260, upload-time = "2020-09-27T21:42:05.04Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/03/e5/80cd9efce7a41adfecbfb00bc7ca8cc46901cd8009d9c7c0bcd234896af1/PYRIDE-0.0.1.dev19-py2.py3-none-any.whl", hash = "sha256:5942c3adc92612df074a440b4cda0ae4219a8d84d80c0c4134aa02280974ead6", size = 40414, upload-time = "2020-09-27T21:42:02.73Z" },
-]
-
-[[package]]
 name = "pyright"
 version = "1.1.414"
 source = { registry = "https://pypi.org/simple" }
@@ -365,7 +353,6 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
-    { name = "pyride" },
     { name = "pyright" },
     { name = "ruff" },
     { name = "ty" },
@@ -380,7 +367,6 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "pyride", specifier = ">=0.0.1.dev19" },
     { name = "pyright", specifier = ">=1.1.414" },
     { name = "ruff", specifier = ">=0.17.3" },
     { name = "ty", specifier = ">=0.0.97" },
